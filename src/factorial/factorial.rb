@@ -11,11 +11,16 @@
 # factorial
 # parameter : positive_integer
 #   A positive integer.
-# raises : NegativeNumberError
-#   if number passed to params is not a positive integer
+# raises : ArgumentError
+#   if non positive integer and isn't 0
+#   if non integer and isn't 0
 # returns the factorial of a positive_integer.
 def factorial(positive_integer)
 	if positive_integer < 0
 		raise ArgumentError, 'Cannot compute factorial of negative numbers.'
+	#check for integers: 
+	#http://www.ruby-doc.org/core-1.9.3/Numeric.html
+	elsif !positive_integer.integer?
+		raise ArgumentError, 'Cannot compute factorial of non-integers.'
 	end
 end

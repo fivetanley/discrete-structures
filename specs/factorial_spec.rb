@@ -9,9 +9,9 @@ describe "factorial" do
 		# http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls
 		# this example was taken from the RSpec book for
 		# raising errors ("throwing exceptions" for us Java people)
-		lambda {factorial(-1)}.should raise_errors(ArgumentError)
+		lambda {factorial(-1)}.should raise_error(ArgumentError)
 	end
 	it "should throw an exception when passed a non integer" do
-		lambda {factorial(-1)}.should raise_errors(ArgumentError)
+		lambda {factorial(1.5)}.should raise_error(ArgumentError)
 	end
 end
