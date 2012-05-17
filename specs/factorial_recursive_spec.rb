@@ -29,7 +29,7 @@ describe "factorial" do
 	it "should return the factorial of numbers less than or equal to
 		the passed integer" do
 		factorial_of_one = factorial(1)
-		factorial_of_two = factorial(2)T
+		factorial_of_two = factorial(2)
 		factorial_of_three = factorial(3)
 		factorial_of_four = factorial(4)
 		factorial_of_five = factorial(5)
