@@ -11,3 +11,5 @@ dstanley.stuart@gmail.com
 * rubygems 1.6
 * rspec
     * `gem install rspec`
+* cucumber
+    * `gem install cucumber`
