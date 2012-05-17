@@ -26,7 +26,8 @@ def factorial(positive_integer)
 		return 1
 	end
 	result = 1	
-	positive_integer.downto(0) {|integer|
-		result = result * factorial(integer)
+	positive_integer.downto(1) {|integer|
+		result = result * integer
 	}
+	return result
 end
