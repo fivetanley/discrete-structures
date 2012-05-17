@@ -17,6 +17,10 @@ describe "factorial" do
 		lambda {factorial(1.5)}.should raise_error(ArgumentError)
 	end
 
+	it "should throw an exception when passed a string" do
+		lambda {factorial("foo")}.should raise_error(ArgumentError)
+	end
+
 	it "should return 1 when passed 0" do
 		result = factorial(0)
 		result.should == 1
