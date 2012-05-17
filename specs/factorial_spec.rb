@@ -18,6 +18,7 @@ describe "factorial" do
 	end
 
 	it "should return 1 when passed 0" do
-		lambda{factorial(0)}.should == 1
+		result = factorial(0)
+		result.should == 1
 	end
 end

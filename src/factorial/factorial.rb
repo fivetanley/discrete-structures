@@ -22,5 +22,7 @@ def factorial(positive_integer)
 	#http://www.ruby-doc.org/core-1.9.3/Numeric.html
 	elsif !positive_integer.integer?
 		raise ArgumentError, 'Cannot compute factorial of non-integers.'
+	elsif positive_integer == 0
+		return 1
 	end
 end
