@@ -1,4 +1,4 @@
-
+# Recursive implementation of factorial
 def factorial(positive_integer)
 	if positive_integer < 0
 		raise ArgumentError, "Cannot compute factorial of negative numbers."
