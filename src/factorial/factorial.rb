@@ -25,4 +25,8 @@ def factorial(positive_integer)
 	elsif positive_integer == 0
 		return 1
 	end
+	result = 1	
+	positive_integer.downto(0) {|integer|
+		result = result * factorial(integer)
+	}
 end
