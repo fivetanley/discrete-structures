@@ -9,6 +9,7 @@ class FactorialCLI
 		# catch any errors
 		begin
 			ftorial = factorial(input.to_i)
+			$stdout.puts factorial
 		rescue ArgumentError
 			$stdout.puts "Please enter a positive integer."
 		end

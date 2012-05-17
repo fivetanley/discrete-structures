@@ -2,6 +2,7 @@ require 'aruba/cucumber'
 
 Given /^a factorial cli is running$/ do
 	run_interactive('../../src/factorial/factorial_cli.rb')
+	sleep(5)
 end
 
 When /^I send it a non-integer$/ do
@@ -13,5 +14,5 @@ When /^I send it a negative number$/ do
 end
 
 Then /^I should see "(.*?)"$/ do |match|
-	assert_partial_output(match, all_output)
+	assert_partial_output(match, all_stdout)
 end
