@@ -25,7 +25,8 @@ def factorial(positive_integer)
 	elsif positive_integer == 0
 		return 1
 	end
-	result = 1	
+	result = 1
+	# Uses a block, which is like passing an anonymous function in JavaScript
 	positive_integer.downto(1) {|integer|
 		result = result * integer
 	}
