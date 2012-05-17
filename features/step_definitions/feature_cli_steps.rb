@@ -1,17 +1,15 @@
-require 'aruba'
-require 'src/factorial/factorial_cli.rb'
+require 'aruba/cucumber'
 
 Given /^a factorial cli is running$/ do
-	@factorial_cli = FactorialCLI.new
-	@factorial_cli.start
+	run_interactive('../../src/factorial/factorial_cli.rb')
 end
 
 When /^I send it a non-integer$/ do
-	type(3.5)
+	type("3.5")
 end
 
 When /^I send it a negative number$/ do
-	type(-1)
+	type("-1")
 end
 
 Then /^I should see "(.*?)"$/ do |match|
